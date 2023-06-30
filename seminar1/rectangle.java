@@ -19,14 +19,12 @@ public class rectangle {
         this.rectWidth = rectWidth;
     }
 
-    public rectangle(int rectHeight) {
-        this.rectHeight = rectHeight;
-        this.rectWidth = 10;
+    public rectangle(int value) {
+        this(value,value);
     }
 
     public rectangle() {
-        this.rectHeight = 10;
-        this.rectWidth = 10;
+        this(10,10);
     }
 
     public int getRectHeight() {

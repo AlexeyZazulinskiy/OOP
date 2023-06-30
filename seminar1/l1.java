@@ -8,6 +8,7 @@ public class l1 {
   //  System.out.println(a.calculatePerimeter());
 
   cat bars = new cat ("bars", 10);
-  bars.catGreet();
+  
+  System.out.println(bars.catGreet());
 }
 }

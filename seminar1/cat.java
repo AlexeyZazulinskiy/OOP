@@ -39,8 +39,8 @@ public class cat {
         this.name = name;
     }
 
-    public void catGreet() {
-        System.out.printf(" Hi i'm %s, my age %d years", name, age);
+    public String catGreet() {
+        return String.format(" Hi i'm %s, my age %d years", name, age);
     }
 
 }
