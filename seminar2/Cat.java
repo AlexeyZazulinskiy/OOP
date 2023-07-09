@@ -6,6 +6,7 @@ public class Cat implements ClinicInterface, HumanInterface, SelfInterface {
     private int age;
     String medhistoru = "";
     String diseases = "";
+    private int lastFoodHour = 2;
 
     public Cat(String name, int age) {
         this.name = name;
@@ -66,6 +67,13 @@ public class Cat implements ClinicInterface, HumanInterface, SelfInterface {
     @Override
     public void vaccinated() {
         System.out.println("");;
+    }
+
+    public void setLastFoodHour(int lastFoodHour) {
+        this.lastFoodHour = lastFoodHour;
+    }
+    public int getLastFoodHour() {
+        return lastFoodHour;
     }
 
 
