@@ -6,7 +6,7 @@ import java.util.Scanner;
 class CalculatorModel {
     private double res;
 
-    public boolean calc(int a, int b, char o) {
+    public boolean calc(double a, double b, char o) {
         boolean flag = true;
         switch (o) {
             case '+':
@@ -19,7 +19,7 @@ class CalculatorModel {
                 res = a * b;
                 break;
             case '/':
-                res = (double) a / b;
+                res = a / b;
                 break;
             default:
                 flag = !flag;
@@ -48,12 +48,12 @@ class CalculatorView {
         System.out.println("Неверная операция");
     }
 
-    public int getUserInputNumber() {
+    public double getUserInputNumber() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число: ");
-        int i;
-        if (scanner.hasNextInt()) {
-            i = scanner.nextInt();
+        double i;
+        if (scanner.hasNextDouble()) {
+            i = scanner.nextDouble();
         } else {
             System.out.print("Ошибка, ");
             scanner.next();
@@ -83,9 +83,9 @@ class CalculatorPresenter {
     }
 
     public void onAddButtonClicked() {
-        int number1 = view.getUserInputNumber();
+        double number1 = view.getUserInputNumber();
         char operation = view.getUserOperation();
-        int number2 = view.getUserInputNumber();
+        double number2 = view.getUserInputNumber();
 
         if (model.calc(number1, number2, operation)){
             double result = model.getResult();
