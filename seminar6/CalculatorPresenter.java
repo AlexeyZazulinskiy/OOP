@@ -1,27 +1,36 @@
 package OOP.seminar6;
 
+/* calculatorPresenter */
 class CalculatorPresenter {
     private CalculatorModel model;
     private UserView view;
     private UserInputNumber inputNumber;
     private UserInputOperation inputOperation;
+    private double number1;
+    private char operation;
+    private double number2;
 
-    public CalculatorPresenter(CalculatorModel model, UserView view, UserInputNumber inputNumber, UserInputOperation inputOperation) {
+    public CalculatorPresenter(CalculatorModel model, UserView view, UserInputNumber inputNumber,
+            UserInputOperation inputOperation) {
         this.model = model;
         this.view = view;
         this.inputNumber = inputNumber;
         this.inputOperation = inputOperation;
     }
 
-    public void onAddButtonClicked() {
-        double number1 =  inputNumber.getData();
-        char operation =  inputOperation.getData();
-        double number2 =  inputNumber.getData();
+    /* отделяем от onbuttonClicker метод calculation */
 
-        if (model.calc(number1, number2, operation)){
-            double result = model.getResult();
-            view.displayResult(result);
-        }else {
+    public void onButtonClicked() {
+        number1 = inputNumber.getData();
+        operation = inputOperation.getData();
+        number2 = inputNumber.getData();
+    }
+
+    public void calculation() {
+        model.calc(number1, number2, operation);
+        if (model.getOperatorError()) {
+            view.displayResult(model.getResult());
+        } else {
             view.displayError();
         }
     }

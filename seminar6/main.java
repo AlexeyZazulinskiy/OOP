@@ -8,6 +8,7 @@ public class main {
         UserInputOperation inputOperation = new UserInputOperation();
         CalculatorPresenter presenter = new CalculatorPresenter(model, view, inputnNumber, inputOperation);
 
-        presenter.onAddButtonClicked();
+        presenter.onButtonClicked(); // ввод данных
+        presenter.calculation(); // запуск калькуляции и вывода
     }
 }

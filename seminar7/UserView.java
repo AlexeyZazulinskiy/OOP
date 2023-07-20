@@ -1,18 +1,10 @@
-package OOP.seminar6;
+package OOP.seminar7;
 
 import java.util.Scanner;
 
-/*
- *  Разделяем класс View на userView, userInputNumber и userInputOperation по принципу Single responsibility principle
- */
-
-class UserView  {
-    public void displayResult(double result) {
-        if (result % 1 > 0) {
-            System.out.printf("Результат:  %.2f", result);
-        } else {
-            System.out.printf("Результат: %.0f", result);
-        }
+public class UserView {
+        public void displayResult(Complex result) {
+            System.out.println(result);
     }
 
     public void displayError() {
