@@ -3,8 +3,8 @@ package OOP.seminar7;
 import java.util.Scanner;
 
 public class UserView {
-        public void displayResult(Complex result) {
-            System.out.println(result);
+    public void displayResult(Complex result) {
+        System.out.println("Результат " + result);
     }
 
     public void displayError() {
@@ -14,16 +14,16 @@ public class UserView {
 
 class UserInputNumber {
 
-    public double getData() {
+    public double getData(String s) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число: ");
+        System.out.print(s);
         double i;
         if (scanner.hasNextDouble()) {
             i = scanner.nextDouble();
         } else {
             System.out.print("Ошибка, ");
             scanner.next();
-            i = (double) getData();
+            i = (double) getData(s);
         }
         return i;
     }

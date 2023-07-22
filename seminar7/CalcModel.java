@@ -4,6 +4,7 @@ public class CalcModel {
     private boolean flag = true;
 
     public void calc(Complex a, Complex b, char o) {
+
         switch (o) {
             case '+':
                 complexOperation.complexAdd(a, b);
@@ -19,11 +20,13 @@ public class CalcModel {
                 break;
             default:
                 flag = !flag;
+
         }
 
     }
 
-    public boolean getOperatorError(){
+    public boolean getOperatorError() {
         return flag;
     }
+
 }

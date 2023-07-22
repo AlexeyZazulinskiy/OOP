@@ -1,0 +1,36 @@
+июл. 22, 2023 10:50:42 AM OOP.seminar7.CalcPresenter calcStart
+INFO: First 1.0 2.0i
+июл. 22, 2023 10:50:44 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Operation *
+июл. 22, 2023 10:50:45 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Second 2.0 1.0i
+июл. 22, 2023 10:50:45 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Result null
+июл. 22, 2023 10:51:41 AM OOP.seminar7.CalcPresenter calcStart
+INFO: First 2.0 1.0i
+июл. 22, 2023 10:51:43 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Operation +
+июл. 22, 2023 10:51:44 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Second 1.0 2.0i
+июл. 22, 2023 10:51:44 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Result null
+июл. 22, 2023 11:01:38 AM OOP.seminar7.CalcPresenter calcStart
+INFO: First 1.0 2.0i
+июл. 22, 2023 11:01:41 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Operation +
+июл. 22, 2023 11:01:42 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Second 2.0 1.0i
+июл. 22, 2023 11:04:53 AM OOP.seminar7.CalcPresenter calcStart
+INFO: First 1.0 2.0i
+июл. 22, 2023 11:04:54 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Operation +
+июл. 22, 2023 11:04:55 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Second 2.0 1.0i
+июл. 22, 2023 11:07:43 AM OOP.seminar7.CalcPresenter calcStart
+INFO: First 1.0 2.0i
+июл. 22, 2023 11:07:44 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Operation +
+июл. 22, 2023 11:07:45 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Second 2.0 1.0i
+июл. 22, 2023 11:07:45 AM OOP.seminar7.CalcPresenter calcStart
+INFO: Result 3.0 3.0i
