@@ -21,7 +21,7 @@ public class CalcPresenter {
         this.operation = operation;
     }
 
-    private Complex complexInput() {
+    private Complex complexInput() {    // Ввод комплексного числа
         System.out.print("Введите ");
         double real = inputNumber.getData("Вещественную часть ");
         double imag = inputNumber.getData("Мнимую часть ");
@@ -29,7 +29,7 @@ public class CalcPresenter {
         return a;
     }
 
-    public void calcStart() {
+    public void calcStart() {   // Запуск калькулятора
         Logger calcLog = Logger.getLogger("Calc");
         FileHandler fh;
         try {

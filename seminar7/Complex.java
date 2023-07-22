@@ -1,6 +1,6 @@
 package OOP.seminar7;
 
-public class Complex {
+public class Complex {  //Структура комплексных чисел
     private double Rez; // вещественная часть
     private double Imz; // мнимая часть
 
@@ -37,7 +37,7 @@ public class Complex {
 
 }
 
-class complexOperation {
+class complexOperation {    // Операции на дкомплексными числами
     private static Complex res = new Complex();
 
     public static void complexAdd(Complex n1, Complex n2) {
