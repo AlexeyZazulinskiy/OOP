@@ -8,7 +8,7 @@ main1.java
 *Задание 3*
 Убираем обращение к не существующему элемету массива,
 переносим "Throwable" в последний блок catch,
-убираем "NullPointerException"
+убираем "NullPointerException",
 убираем "FileNotFoundException" в "printSum"
 
 *Задание 4*

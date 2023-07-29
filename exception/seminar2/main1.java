@@ -1,6 +1,7 @@
 package OOP.exception.seminar2;
 
 import java.util.Scanner;
+
 //                                              Задание 1
 public class main1 {
     public static void main(String[] args) {
