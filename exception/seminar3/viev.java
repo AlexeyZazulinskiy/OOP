@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class viev {
     static String userEnter() { // последовательность имя - фамилия определяестся автоатически через функцию
-                                // заглушку getNameFromDB()
+                                // заглушку getNameFromDB() первым определяется имя, вторым фамилия
         // return "89283635799 f 22.12.1991 asasas bnbnbn";
         // return "89283630789 f 22.12.1991 asasaos bnbnbn";
-        return "asas bnbnbn 12.12.1213 81231231212 f";
+        return "asfas bnbnbn 12.12.1213 81231231212 m";
     }
 
     static void saveToFile() {

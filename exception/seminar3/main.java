@@ -9,8 +9,3 @@ public class main {
         presenter.startprogram();
     }
 }
-
-class exp extends ArithmeticException {
-
-
-}

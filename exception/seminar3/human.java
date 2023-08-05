@@ -7,18 +7,6 @@ public class human {
     private static String phoneNumber;
     private static String gender;
 
-    public void human() {
-
-    }
-
-    public void clear() {
-        firstName = null;
-        lastName = null;
-        birthday = null;
-        phoneNumber = null;
-        gender = null;
-    }
-
     public static void setFirstName(String fName) {
         firstName = fName;
     }
@@ -43,6 +31,6 @@ public class human {
     }
 
     public static String getHuman() {
-        return firstName + " " + lastName + " " + birthday + " " + phoneNumber + " " + gender;
+        return lastName + " " + firstName + " " + birthday + " " + phoneNumber + " " + gender;
     }
 }
